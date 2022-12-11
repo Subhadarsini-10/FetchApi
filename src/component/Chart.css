@@ -1,0 +1,4 @@
+.piechart {
+  display: flex;
+  flex-direction: row;
+}
