@@ -1,12 +1,11 @@
-import React, { PureComponent, useState } from "react";
+import React, { useState } from "react";
 import { faker } from "@faker-js/faker";
-import { PieChart, Pie, Legend, Tooltip, ResponsiveContainer } from "recharts";
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid } from "recharts";
+import { PieChart, Pie, Legend, Tooltip} from "recharts";
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid } from "recharts";
 import "./Chart.css";
 import {Navigate} from 'react-router-dom';
 
 const Chart = () => {
-  const id = faker.random.numeric();
   const userName = faker.name.fullName();
   const address = faker.address.cityName();
   const streetName = faker.address.streetName();
@@ -15,8 +14,6 @@ const Chart = () => {
   const street = faker.address.street();
   const city = faker.address.city();
   const country = faker.address.country();
-  const phone = faker.phone.number();
-  const occupation = faker.name.jobTitle();
   const vehicle = faker.vehicle.vehicle();
   const maker = faker.vehicle.manufacturer();
   const type = faker.vehicle.type();

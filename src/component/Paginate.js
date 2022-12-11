@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Paginate.css";
 import axios from "axios";
-import { Navigate } from "react-router-dom";
 import {
   MDBTable,
   MDBTableHead,
@@ -13,7 +12,6 @@ import {
 
 function Paginate() {
   const [data, setData] = useState([]);
-  const [value, setValue] = useState("");
   const [sortValue, setSortValue] = useState("");
 
   const sortOption = ["age", "name", "email", "car"];
